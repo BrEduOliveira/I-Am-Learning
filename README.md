@@ -1,6 +1,6 @@
 # I-Am-Learning
 
-* A repo containing languages ​​I learned on my own
+* A repo containing languages I learned on my own
 
 * I learned by reading books, taking courses and watching videos
 
