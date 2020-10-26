@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Site</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css" /> <!-- Faz o link com o arquivo .css para aplicar os estilos -->
+	</head>
+	<body>
+		<h1>Meu formulário</h1> <!-- h1 para titulo -->
+
+		<!-- Imagem com link e um link para outra página -->
+		<div>
+			<a href="dayvi-x-victor-cardenas-x-kelly-ruiz-audio-oficial.mp3" target="_blank">
+				<img src="braba.jpg" width="400" height="250" title="brabona" alt="braba"/> <!-- width: largura, height:altura -->
+			</a>
+			<br/>
+			Clique na foto para lansar a braba ou clique
+			<a href="site para estudo p2.html" target="_blank"> <!-- Usamos _blank para outra guia -->
+				aqui
+			</a>
+			para abrir a Página 2.
+		</div>
+
+		<div> <!-- Música -->
+			<audio controls="" src="C:\Users\Bruno\Documents\CC\HTML\dayvi-x-victor-cardenas-x-kelly-ruiz-audio-oficial.mp3">
+			</audio>
+		</div>
+
+		<h2>Preencha os campos</h2>
+		
+		<!-- Formulário -->
+		<form action="" method="get" enctype="multpart/form-data"> <!-- GET:Mostra os dados na url, POST:Esconde os dados para o usuário -->
+			<div>  
+				<label for=""><b>Nome</b></label> <!-- label: etiquetas ou nomes para os campos, required: campo obrigatório -->
+				<input type="text" name="nome" required="required" placeholder="Digite seu nome"/>
+			</div>
+
+			<div> <!-- Email -->
+				<label for=""><b>E-mail</b></label>
+				<input type="text" name="email" required="required" placeholder="Digite seu email"/>
+			</div>
+			
+			<div> <!-- Dropdown lists -->
+				<label for=""><b>Selecione sua cidade</b></label>
+				<select  name="cidade" required="required"> 
+					<option selected="selected" value="">Selecione</option>
+					<option value="c1">Cidade1</option>
+					<option value="c2">Cidade2</option>
+					<option value="c3">Cidade3</option>
+				</select>
+			</div>
+
+			<div> <!-- Arquivo -->
+				<label for=""><b>Foto</b></label> 
+				<input type="file" name="foto"/> 
+			</div>
+
+			<div> <!-- Radio Button -->
+				<br/><b>Sexo</b><br/>
+				<label for="sexo1"><input id="sexo1" type="radio" name="sexo" value="mas" />Masculino</label>
+				<label for="sexo2"><input id="sexo2" type="radio" name="sexo" value="fem" />Feminino</label>
+			</div>
+
+			<br/>
+			<div> <!-- Textarea -->
+				<label for=""><b>Biografia</b></label> <br/> 
+				<textarea name="biografia" placeholder="Digite aqui" cols="40" rows="10"/></textarea>  
+			</div>
+
+			<div> <!-- Um input próprio para senhas -->
+				<label for=""><br><b>Senha</b></label>
+				<input type="password" name="senha" required="required" placeholder="Digite sua senha"/>
+			</div>
+			<br/>
+			<div> <!-- Checkbok -->
+				<label for="noticias">
+					<input id="noticias" type="checkbox" name="newsletter" checked="checked" /><b>Deseja receber noticias?</b>
+				</label>
+			</div>
+
+			<div>  <!-- Buttton -->
+				<br/><button type="submit" name="enviar" value="1"/>Enviar</button>
+			</div>
+		</form>		
+	</body>
+</html>
